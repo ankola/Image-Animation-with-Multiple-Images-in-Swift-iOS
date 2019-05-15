@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wzh-zx-30l">
+                                <rect key="frame" x="82.5" y="253.5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xx6-x5-rOe"/>
+                                    <constraint firstAttribute="width" constant="60" id="zdV-rg-f7l"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQf-eB-0eq">
+                                <rect key="frame" x="52" y="371" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.15686274510000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Nw5-aq-Lxs"/>
+                                    <constraint firstAttribute="width" constant="120" id="mi0-T2-62P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RsN-RX-IV0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryu-0.png" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-yw-A9v">
+                                <rect key="frame" x="211.5" y="121.5" width="108" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="1ra-AP-d3y"/>
+                                    <constraint firstAttribute="width" constant="108" id="XN4-jW-X7K"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdM-JO-kdH">
+                                <rect key="frame" x="200" y="371" width="120" height="44"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.15686274510000001" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9sn-pr-8C3"/>
+                                    <constraint firstAttribute="width" constant="120" id="xou-iC-PyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Shoryuken">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shoryukenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZQ-1J-8yq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XQf-eB-0eq" firstAttribute="centerX" secondItem="Wzh-zx-30l" secondAttribute="centerX" id="7E9-Oz-92X"/>
+                            <constraint firstItem="XQf-eB-0eq" firstAttribute="top" secondItem="Wzh-zx-30l" secondAttribute="bottom" constant="57.5" id="7hf-1Q-bXZ"/>
+                            <constraint firstItem="fK7-yw-A9v" firstAttribute="leading" secondItem="Wzh-zx-30l" secondAttribute="trailing" constant="69" id="DYz-b5-z6t"/>
+                            <constraint firstItem="LdM-JO-kdH" firstAttribute="centerY" secondItem="XQf-eB-0eq" secondAttribute="centerY" id="Gih-my-6IK"/>
+                            <constraint firstItem="fK7-yw-A9v" firstAttribute="bottom" secondItem="Wzh-zx-30l" secondAttribute="bottom" constant="10" id="KuP-fU-pfY"/>
+                            <constraint firstItem="LdM-JO-kdH" firstAttribute="leading" secondItem="XQf-eB-0eq" secondAttribute="trailing" constant="28" id="WXK-fc-wUR"/>
+                            <constraint firstItem="Wzh-zx-30l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-75" id="kJA-DU-56l"/>
+                            <constraint firstItem="Wzh-zx-30l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="uMc-Np-yQZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heartImageView" destination="Wzh-zx-30l" id="dBX-YV-lrG"/>
+                        <outlet property="ryuImageView" destination="fK7-yw-A9v" id="R9V-rb-T3h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart-0.png" width="100" height="100"/>
+        <image name="ryu-0.png" width="80" height="150"/>
+    </resources>
+</document>
